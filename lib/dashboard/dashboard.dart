@@ -21,7 +21,6 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
-        textTheme: GoogleFonts.montserratTextTheme(),
         toolbarHeight: 110,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -56,7 +55,7 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
           ],
-        ),
+        ), toolbarTextStyle: GoogleFonts.montserratTextTheme().bodyText2, titleTextStyle: GoogleFonts.montserratTextTheme().headline6,
       ),
       body: SafeArea(
         child: Stack(
